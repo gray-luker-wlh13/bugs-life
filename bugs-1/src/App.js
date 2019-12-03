@@ -17,7 +17,7 @@ class App extends Component {
 
   handleInputChange = (e) => {
     this.setState({
-      userInput: e
+      userInput: e.target.value
     });
   }
 
