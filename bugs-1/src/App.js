@@ -15,16 +15,16 @@ class App extends Component {
 
   }
 
-  handleInputChange(e) {
+  handleInputChange = (e) => {
     this.setState({
       userInput: e
     });
   }
 
-  handleSubmit() {
+  handleSubmit = () => {
     this.setState({
-      userInput: "",
-      list: [...this.state.list, this.state.userInput]
+      list: [...this.state.list, this.state.userInput],
+      userInput: ""
     });
   }
 
